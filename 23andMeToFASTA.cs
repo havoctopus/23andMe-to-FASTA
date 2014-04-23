@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -99,6 +100,11 @@ namespace NS_23andMe_to_FASTA
                 File.WriteAllText(saveFileDialog1.FileName, sb.ToString());
                 statusLbl.Text = "File saved.";
             }
+        }
+
+        private void Form1_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            Process.Start("http://www.y-str.org/2014/04/23andme-to-fasta.html");
         }
     }
 }

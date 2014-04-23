@@ -43,7 +43,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 46);
+            this.button1.Size = new System.Drawing.Size(213, 46);
             this.button1.TabIndex = 0;
             this.button1.Text = "Open 23andMe File";
             this.button1.UseVisualStyleBackColor = true;
@@ -54,7 +54,7 @@
             this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(12, 64);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 46);
+            this.button2.Size = new System.Drawing.Size(213, 46);
             this.button2.TabIndex = 1;
             this.button2.Text = "Save mtDNA FASTA File";
             this.button2.UseVisualStyleBackColor = true;
@@ -72,9 +72,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLbl});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 124);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 129);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(201, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(237, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -93,17 +93,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(201, 146);
+            this.ClientSize = new System.Drawing.Size(237, 151);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "23andMe to FASTA";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.Form1_HelpButtonClicked);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
